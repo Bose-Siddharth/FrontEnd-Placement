@@ -1,7 +1,7 @@
 import { LoginData, AccessToken } from "./types";
 
 export const login = () => {
-    return fetch(`${process.env.API_URL}/login`, {
+    return fetch(`http://localhost:5000/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -10,7 +10,7 @@ export const login = () => {
 }
 
 // export const register = (data: LoginData) => {
-//     return fetch(`${process.env.API_URL}/register`, {
+//     return fetch(`http://localhost:5000/register`, {
 //         method: "POST",
 //         headers: {
 //             "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export const login = () => {
 // }
 
 // export const getMe = (token: string) => {
-//     return fetch(`${process.env.API_URL}/me`, {
+//     return fetch(`http://localhost:5000/me`, {
 //         method: "GET",
 //         headers: {
 //             "Content-Type": "application/json",

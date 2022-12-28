@@ -30,7 +30,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
     const reader = new FileReader()
     reader.readAsDataURL(photo as Blob)
     reader.onload = () => {
-      fetch(`${process.env.API_URL}/admin/auth/signUp`, {
+      fetch(`http://localhost:5000/admin/auth/signUp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
     const reader = new FileReader()
     reader.readAsDataURL(photo as Blob)
     reader.onload = () => {
-      fetch(`${process.env.API_URL}/staff/auth/signup`, {
+      fetch(`http://localhost:5000/staff/auth/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
     reader1.readAsDataURL(resume as Blob)
     reader.onload = () => {
       reader1.onload = () => {
-        fetch(`${process.env.API_URL}/users/auth/signup`, {
+        fetch(`http://localhost:5000/users/auth/signup`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -216,7 +216,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
                   alt="Workflow"
                 />
                 <h2 className="mt-6 text-center text-4xl font-extrabold text-gray-900">
-                  Hello admin, Sign in to your account
+                  Hello admin, Sign Up to your account
                 </h2>
               </div>
               <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -370,7 +370,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
                       alt="Workflow"
                     />
                     <h2 className="mt-6 text-center text-4xl font-extrabold text-gray-900">
-                      Hello Staff, Sign in to your account
+                      Hello Staff, Sign up to your account
                     </h2>
                   </div>
                   <form className="mt-8 space-y-6" onSubmit={handleSubmitStaff}>
@@ -531,7 +531,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
                               alt="Workflow"
                             />
                             <h2 className="mt-6 text-center text-4xl font-extrabold text-gray-900">
-                              Hello Student, Sign in to your account
+                              Hello Student, Sign up to your account
                             </h2>
                           </div>
                           <form

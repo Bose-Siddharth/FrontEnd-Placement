@@ -14,7 +14,7 @@ export default function NoticeUpload() {
     const reader = new FileReader()
     reader.readAsDataURL(noticePdf as Blob)
     reader.onload = () => {
-      fetch(`${process.env.API_URL}/notice/post`, {
+      fetch(`http://localhost:5000/notice/post`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ export const DriveLogic = () => {
 
   useEffect(
     () => {
-      fetch(`${process.env.API_URL}/placement/get`, {
+      fetch(`http://localhost:5000/placement/get`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

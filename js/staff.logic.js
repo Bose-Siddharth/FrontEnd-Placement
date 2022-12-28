@@ -4,7 +4,7 @@ export const StaffLogic = () => {
   const [staffsDetail, setstaffsDetail] = useState([])
 
   useEffect(() => {
-    fetch(`${process.env.API_URL}/staff/auth/allusers`, {
+    fetch(`http://localhost:5000/staff/auth/allusers`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

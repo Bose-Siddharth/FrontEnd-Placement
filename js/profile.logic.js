@@ -5,7 +5,7 @@ export const ProfileLogic = () => {
 
   useEffect(
     () => {
-      fetch(`${process.env.API_URL}/users/63aab2e69a10e2c153e02195`, {
+      fetch(`http://localhost:5000/users/63aab2e69a10e2c153e02195`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

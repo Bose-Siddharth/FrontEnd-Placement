@@ -4,7 +4,7 @@ export const StudentLogic = () => {
   const [studentsDetail, setStudentsDetail] = useState([])
 
   useEffect(() => {
-    fetch(`${process.env.API_URL}/users/auth/allusers`, {
+    fetch(`http://localhost:5000/users/auth/allusers`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

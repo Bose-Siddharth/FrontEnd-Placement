@@ -8,7 +8,7 @@ import {
   InboxIcon,
   UsersIcon,
 } from '@heroicons/react/20/solid'
-import { StudentLogic } from '../../js/student.logic.js'
+import { StudentLogic } from '../../js/Student.logic.js'
 
 const adminNavigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon, current: true },

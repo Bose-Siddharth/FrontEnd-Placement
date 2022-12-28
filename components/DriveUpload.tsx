@@ -24,7 +24,7 @@ export default function DriveUpload() {
     reader1.readAsDataURL(assessmentPdf as Blob)
     reader.onload = () => {
       reader1.onload = () => {
-        fetch(`${process.env.API_URL}/placement/apply`, {
+        fetch(`http://localhost:5000/placement/apply`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

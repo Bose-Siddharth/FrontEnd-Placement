@@ -33,7 +33,7 @@ const Dashboard = () => {
   return (
     <DashboardLayout title="Profile" navigation={staffNavigation}>
       <div className="px-4 py-6 sm:px-0">
-        <Profile/>
+        {/* <Profile/> */}
       </div>
     </DashboardLayout>
   )

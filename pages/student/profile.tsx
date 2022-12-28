@@ -36,7 +36,7 @@ const Dashboard = (props: any) => {
   return (
     <DashboardLayout title="Profile" navigation={studentNavigation}>
       <div className="px-4 py-6 sm:px-0">
-        <Profile />
+        {/* <Profile /> */}
       </div>
     </DashboardLayout>
   )

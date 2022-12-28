@@ -5,7 +5,7 @@ export const NoticeLogic = () => {
 
   useEffect(
     () => {
-      fetch(`${process.env.API_URL}/notice/get`, {
+      fetch(`http://localhost:5000/notice/get`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

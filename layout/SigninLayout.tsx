@@ -14,7 +14,7 @@ export default function SigninLayout({ loginType }: { loginType: LoginScope }) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    fetch(`${process.env.API_URL}/admin/auth/signin`, {
+    fetch(`http://localhost:5000/admin/auth/signin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ export default function SigninLayout({ loginType }: { loginType: LoginScope }) {
 
   const handleSubmitStaff = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    fetch(`${process.env.API_URL}/staff/auth/signin`, {
+    fetch(`http://localhost:5000/staff/auth/signin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ export default function SigninLayout({ loginType }: { loginType: LoginScope }) {
   const handleSubmitStudent = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    fetch(`${process.env.API_URL}/users/auth/signin`, {
+    fetch(`http://localhost:5000/users/auth/signin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -442,8 +442,20 @@ export default function SigninLayout({ loginType }: { loginType: LoginScope }) {
                                     aria-hidden="true"
                                   />
                                 </span>
-                                Sign Up
+                                Sign In
                               </button>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <div className="text-sm">
+                                <div
+                                  onClick={() =>
+                                    (window.location.href = '/student/signup')
+                                  }
+                                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                                >
+                                  Do not have an account? Sign up
+                                </div>
+                              </div>
                             </div>
                           </form>
                         </div>

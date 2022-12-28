@@ -80,7 +80,7 @@ export default function SignupLayout({ loginType }: { loginType: LoginScope }) {
     const reader = new FileReader()
     reader.readAsDataURL(photo as Blob)
     reader.onload = () => {
-      fetch(`http://localhost:5000/staff/auth/signup`, {
+      fetch(`http://uemplacementbackend-env.eba-bbzvmzhm.ap-south-1.elasticbeanstalk.com/staff/auth/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

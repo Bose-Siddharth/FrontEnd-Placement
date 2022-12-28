@@ -5,7 +5,7 @@ export const DriveLogic = () => {
 
   useEffect(
     () => {
-      fetch(`http://localhost:5000/placement/get`, {
+      fetch(`http://uemplacementbackend-env.eba-bbzvmzhm.ap-south-1.elasticbeanstalk.com/placement/get`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

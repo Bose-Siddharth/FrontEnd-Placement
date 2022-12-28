@@ -8,7 +8,7 @@ import {
   InboxIcon,
   UsersIcon,
 } from '@heroicons/react/20/solid'
-import { StaffLogic } from '../../js/Staff.logic.js'
+import { StaffLogic } from '../../js/staff.logic.js'
 
 const adminNavigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon, current: true },
